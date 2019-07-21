@@ -1,5 +1,5 @@
 from PIL import Image
-def ChangePixels(im, col, col2, out="out.png", tolerance=10):
+def ChangePixels(im, col, col2, out="out.png", tolerance=10, save=True):
     newimdata = []
     blackcolor = col
     white=col2
@@ -10,9 +10,12 @@ def ChangePixels(im, col, col2, out="out.png", tolerance=10):
             newimdata.append(tuple(color))
     newim = Image.new(im.mode,im.size)
     newim.putdata(tuple(newimdata))
-    try:
-        newim.save(out)
-        return True
-    except Exception as ex:
-        print(ex)
-        return False
+    if save:
+        try:
+            newim.save(out)
+            return True
+        except Exception as ex:
+            print(ex)
+            return False
+    else:
+        return newim
