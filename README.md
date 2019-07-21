@@ -3,7 +3,7 @@ A python project that processes pixels from a frame and then edits it
 
 # Functions
 
-### 1) ChangePixels(im, col, col2, out, tolerance):
+### 1) ChangePixels(im, col, col2, out="out.png", tolerance=10, save=True):
 
 
 Replace pixels having a **RGB** value of **col** with pixels having a **RGB** value of **col2**
@@ -16,3 +16,5 @@ Replace pixels having a **RGB** value of **col** with pixels having a **RGB** va
 `out` - Output File Location
 
 `tolerance` - An int value that decides how many variations of **col** should be replaced
+
+`save` - If set to **True**, image will automatically save and return **True** if save was successful. Setting the value to **False** would return the PIL image instance of the edited image.
