@@ -1,9 +1,9 @@
 # PixelMenu
 A python project that processes pixels from a frame and then edits it
 
-#Functions
+# Functions
 
-####ChangePixels(im, col, col2, out, tolerance):
+### ChangePixels(im, col, col2, out, tolerance):
 
 
 Replace pixels having a **RGB** value of **col** with pixels having a **RGB** value of **col2**
