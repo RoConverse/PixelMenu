@@ -1,5 +1,5 @@
 from PIL import Image
-def ChangePixels(im, col, col2, out="out.png", tolerance=10, save=True):
+def ChangePixels(im, col, col2, out="out.png", tolerance=10, save=True): #Variable names are not accurate, ik :p
     newimdata = []
     blackcolor = col
     white=col2
