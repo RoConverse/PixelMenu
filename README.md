@@ -16,7 +16,7 @@ Replace pixels having a **RGB** value of **col** with pixels having a **RGB** va
 
 `out` - Output File Location
 
-`tolerance` - An int value that decides how many variations of **col** should be replaced
+`tolerance` - An int value that decides how many variations of the selected color should be replaced
 
 `save` - If set to **True**, image will automatically save and return **True** if save was successful. Setting the value to **False** would return the PIL image instance of the edited image.
 
