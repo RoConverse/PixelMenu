@@ -19,12 +19,12 @@ def ChangePixels(im, col, col2, out="out.png", tolerance=10, save=True):
             return False
     else:
         return newim
-def ChangeTransparency(im, col, out="out.png", transparency=255, tolerance=10, save=True):
+'''def DeletePixels(im, col, out="out.png", tolerance=10, save=True):
     newimdata = []
     blackcolor = col
     for color in tuple(im.getdata()):
         if sum(tuple(color)) in range(sum(blackcolor), sum(blackcolor)+tolerance) or sum(tuple(color)) in range(sum(blackcolor)-tolerance, sum(blackcolor)):
-            newimdata.append((255,255,255,transparency))
+            newimdata.append((255,255,255,0))
         else:
             newimdata.append(tuple(color))
     newim = Image.new(im.mode,im.size)
@@ -37,4 +37,4 @@ def ChangeTransparency(im, col, out="out.png", transparency=255, tolerance=10, s
             print(ex)
             return False
     else:
-        return newim
+        return newim''' # Bug Fixes in progress
