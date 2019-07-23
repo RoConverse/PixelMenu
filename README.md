@@ -20,3 +20,21 @@ Replace pixels having a **RGB** value of **col** with pixels having a **RGB** va
 
 `save` - If set to **True**, image will automatically save and return **True** if save was successful. Setting the value to **False** would return the PIL image instance of the edited image.
 
+# Practical Usage
+
+Changing information from frames and re-rendering them
+
+### 1) Extracting Frames from original clip
+
+![](input.gif)
+
+### 2) Processing Frames
+
+Process frames and then edit them
+
+### 3) Rendering the edited frames
+
+![](output.gif)
+
+
+
