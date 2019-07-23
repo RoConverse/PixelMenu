@@ -36,5 +36,5 @@ Process frames and then edit them
 
 ![](output.gif)
 
-
+#### The above example was made with just 10 lines of code and took less than a few seconds to render.
 
